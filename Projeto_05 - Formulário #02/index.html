@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria - Formulário de Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page">
+
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+
+      <form id="my-form">
+        
+        <fieldset>
+        
+          <div class="fieldset-wrapper">
+            <legend>Informações Pessoais</legend>
+            
+            <div class="col-2">
+            
+              <div class="input-wrapper">
+                <label for="form-name">Nome</label>
+                <input type="text" name="nome" id="form-name" required />
+              </div>
+              
+              <div class="input-wrapper">
+                <label for="form-lastname">Sobrenome</label>
+                <input type="text" name="sobrenome" id="form-lastname" required />
+              </div>
+
+            </div>
+              
+            <div class="input-wrapper">
+              <label for="form-mail">E-mail<p>(digite um email válido)</p></label>
+              <input type="email" name="e-mail" id="form-mail" required />
+            </div>  
+            
+            <div class="input-wrapper">
+              <label for="form-password">Senha<p>(mínimo de 6 caracteres)</p></label>
+              <input type="password" name="senha" id="form-password" required minlength="6"/>
+            </div>  
+            
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+              <legend>Informações do mentor</legend>
+            <div class="input-wrapper">
+              <label for="form-mastername">Nome do seu mentor<p>(só o primeiro nome)</p></label>
+              <input type="text" name="nome-mentor" id="form-mastername" />
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <div class="fieldset-wrapper">
+            <legend>Seus horários disponíveis</legend>
+            
+            <legend class="sub-legend">Primeira mentoria</legend>
+            
+            <div class="col-3">
+
+              <div class="input-wrapper">
+                <label for="form-date1">Data<p>(DD/MM/AAAA)</p></label>
+                <input type="date" name="primeiro-dia" id="form-date1" /> 
+              </div>  
+              
+              <div class="input-wrapper">
+                <label for="form-start">Das</label>
+                <input type="time" name="hora-inicio" id="form-start" /> 
+              </div>  
+              
+              <div class="input-wrapper">
+                <label for="form-end">Até</label>
+                <input type="time" name="hora-fim" id="form-end" /> 
+              </div>
+               
+            </div>
+
+            <legend class="sub-legend">Segunda metoria</legend>
+            <div class="col-3">
+
+              <div class="input-wrapper">
+                <label for="form-date2">Data<p>(DD/MM/AAAA)</p></label>
+                <input type="date" name="segundo-dia" id="form-date2">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="form-start2">Das</label>
+                <input type="time" name="hora-inicio2" id="form-start2">
+              </div>
+              
+              <div class="input-wrapper"> 
+                <label for="form-end2">Até</label>
+                <input type="time" name="hora-fim2" id="form-end2">
+              </div>
+              
+            </div>  
+          
+          </div>
+
+        </fieldset>
+
+      </form>
+
+      <footer>
+
+        <button class="form-submit" form="my-form">
+          Salvar
+        </button>
+
+      </footer>
+
+    </div>    
+  </body>
+</html>
